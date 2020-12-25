@@ -37,3 +37,16 @@ through the files and loads the entire application memory.
 ## REPL - Read Eval Print Loop 
 
 It is an interactive JS runtime. It is the node 'interpreter shell'. 
+
+## Node Conventions
+
+1. `package.json` -- Package manager and metadata about the project. 
+    `dependencies` --> these projects will get added to `node_modules` and now
+    this can be `required` anywhere. 
+
+2. Environments and Configuration
+    * Start app with `NODE_ENV=<env_name> node index.js`  (uses the `config.js` file)
+    * pass config everytime you start the name
+    * use a `.env` file. 
+
+3. Airbnb Node Style guide
